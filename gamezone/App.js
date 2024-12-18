@@ -1,9 +1,11 @@
 import React from "react";
-import Home from "./screens/home";
+import { NavigationContainer } from "@react-navigation/native";
+import Navigator from './routes/drawer';
 
 export default function App() {
   return (
-    <Home />
+    <NavigationContainer>
+      <Navigator />
+    </NavigationContainer>
   );
 }
-
